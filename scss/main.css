@@ -1,0 +1,197 @@
+.search {
+  margin-top: 6em;
+}
+
+.search input[type=text] {
+  background-color: #161625;
+  border: 1px solid #343a40;
+  color: #007bff;
+}
+
+.search input[type=text]:focus {
+  background-color: #161625;
+  outline: none;
+}
+
+.search i {
+  position: absolute;
+  left: 82%;
+  padding-top: 10px;
+  color: #007bff;
+  font-size: 20px;
+}
+
+.search i:hover {
+  cursor: pointer;
+}
+
+.heading {
+  margin-top: 4em;
+  color: #007bff;
+  font-family: Alegreya SC;
+}
+
+.stats {
+  margin-top: 2em;
+}
+
+.stats .card {
+  background-color: #343a40;
+}
+
+.stats .columns {
+  margin-bottom: 10px;
+}
+
+.new-confirmed, .total-confirmed {
+  color: #ff073a;
+}
+
+.new-deaths, .total-deaths {
+  color: #ffc107;
+}
+
+.new-recovered, .total-recovered {
+  color: #28a745;
+}
+
+.graphs {
+  margin-top: 4em;
+}
+
+.bottom {
+  margin-top: 4em;
+  color: #007bff;
+  background-color: #343a40;
+  border: none;
+  height: 50px;
+  padding-top: 10px;
+}
+
+.confirmed-country {
+  color: #ff073a;
+}
+
+.death-country {
+  color: #007bff;
+}
+
+.recovered-country {
+  color: #ffc107;
+}
+
+.active-country {
+  color: #20c997;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #161625;
+}
+
+.front-poster {
+  color: #007bff;
+  margin-top: 10em;
+  font-family: Alegreya SC;
+  font-weight: bold;
+}
+
+.front-poster p {
+  font-size: 70px;
+}
+
+.front-poster i {
+  font-size: 150px;
+  -webkit-animation-name: change;
+          animation-name: change;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.front-poster .btn {
+  background-color: #007bff;
+  color: white;
+  -webkit-animation-name: heartbeat;
+          animation-name: heartbeat;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.front-poster .btn:focus {
+  outline: none;
+}
+
+@-webkit-keyframes change {
+  0% {
+    color: #28a745;
+  }
+  25% {
+    color: #28a745;
+  }
+  50% {
+    color: #ff073a;
+  }
+  75% {
+    color: #ffc107;
+  }
+  100% {
+    color: #fb5581;
+  }
+}
+
+@keyframes change {
+  0% {
+    color: #28a745;
+  }
+  25% {
+    color: #28a745;
+  }
+  50% {
+    color: #ff073a;
+  }
+  75% {
+    color: #ffc107;
+  }
+  100% {
+    color: #fb5581;
+  }
+}
+
+@-webkit-keyframes heartbeat {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes heartbeat {
+  30% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  60% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  90% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+/*# sourceMappingURL=main.css.map */

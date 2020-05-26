@@ -1,0 +1,72 @@
+@import 'config';
+
+.search {
+    margin-top: 6em;
+    input[type=text] {
+        background-color: $primarycolor;
+        border: 1px solid $buttoncolor;
+        color: $textcolor;
+        &:focus {
+            background-color: $primarycolor;
+            outline: none;
+        }
+    }
+    i {
+        position: absolute;
+        left: 82%;
+        padding-top: 10px;
+        color: $textcolor;
+        font-size: 20px;
+        &:hover {
+            cursor:pointer;
+        }
+    }
+}
+.heading {
+    margin-top: 4em;
+    color: $textcolor;
+    font-family: $font;
+}
+.stats{
+    margin-top: 2em;
+    .card {
+        background-color: $buttoncolor;
+    }
+    .columns{
+        margin-bottom:10px;
+    }
+}
+.new-confirmed,.total-confirmed {
+    color: #ff073a;
+}
+.new-deaths,.total-deaths {
+    color: #ffc107;
+}
+.new-recovered,.total-recovered {
+    color: #28a745;
+}
+.graphs {
+    margin-top: 4em;
+}
+.bottom {
+    margin-top: 4em;
+    color: $textcolor;
+    background-color: $buttoncolor;
+    border: none;
+    height: 50px;
+    padding-top: 10px;
+
+}
+.confirmed-country {
+    color: #ff073a;
+}
+.death-country {
+    color: #007bff;
+}
+.recovered-country {
+    color: #ffc107;
+}
+.active-country {
+    color: #20c997;
+}
+

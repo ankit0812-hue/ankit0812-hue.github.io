@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid 19 Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="scss/main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Alegreya SC' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+<body onload="globalstats()">
+    <div class="container search">
+        <i class="fas fa-search" id="search-btn"></i>
+        <input type="text" class="form-control" id="country" placeholder="Search for your country">
+    </div>
+    <div class="container heading text-center">
+        <h1 id="title-app">Global Statistics</h1>
+    </div>
+    <div class="container stats">
+       <div class="row" id="statistics">
+
+       </div> 
+
+    </div>
+    <div class="container graphs">
+       <div class="row">
+           <div class="col-md-6 col-12">
+            <canvas id="bar-graph"></canvas>
+           </div>
+           <div class="col-md-6 col-12">
+               <canvas id="line-graph"></canvas>
+           </div>
+       </div>
+    </div>
+    <footer class="footer">
+        <div class="container-fluid bottom text-center">
+            <p>&copy; 2020 Ankit Das</p>
+        </div>
+    </footer>
+</body>
+<script src="js/dahsboard.js"></script>
+</html>

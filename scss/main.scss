@@ -1,0 +1,67 @@
+@import 'config';
+@import 'dashboard';
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $primarycolor;
+}
+
+.front-poster {
+    color: $textcolor;
+    margin-top: 10em;
+    font-family: $font;
+    font-weight: bold;
+    p {
+        font-size: 70px;
+    }
+    i {
+        font-size: 150px;
+        animation-name: change;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+    }
+    .btn {
+        background-color: $textcolor;
+        color: white;
+        animation-name: heartbeat;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+
+@keyframes change {
+    0% {
+        color: #28a745;
+    }
+    25% {
+        color: #28a745;
+    }
+    50% {
+        color: #ff073a;
+    }
+    75% {
+        color: #ffc107;
+    }
+    100% {
+        color: #fb5581;
+    }
+}
+
+@keyframes heartbeat {
+    30% {
+        transform: scale(1);
+    }
+    60% {
+        transform : scale(1.1);
+    }
+    90% {
+        transform: scale(1);
+    }
+}
