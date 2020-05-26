@@ -8,7 +8,7 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 ## Tech/Framework Used
-HTML, SASS, Bootstrap 4, JavaScript
+HTML, SASS, Bootstrap 4, JavaScript, Chart.js
 
 ## API Reference
  
