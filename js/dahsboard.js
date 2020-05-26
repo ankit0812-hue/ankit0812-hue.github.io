@@ -112,7 +112,7 @@ searchButton.addEventListener('click',() =>{
             console.log(apidata.data.deaths);
             var stats = document.getElementById('statistics');
             stats.innerHTML = "";
-            document.getElementById("title-app").innerHTML = country_name + "'s Statitics";
+            document.getElementById("title-app").innerHTML = country_name + "'s Statistics";
             for(var i=1;i<=4;i++)
             {
                 var columns = document.createElement("div");
